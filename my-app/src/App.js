@@ -1,16 +1,16 @@
 import './Appa.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from "./components/About";
+// import About from "./components/About";
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 // import React from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -42,7 +42,7 @@ function App() {
   }
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     {/* <Router> */}
     
     <Navbar
@@ -54,15 +54,15 @@ function App() {
       />
       <Alert alert={alert} />
 
-      <Routes>
+      {/* <Routes> */}
         
-        <Route path = "/about" element= {<About/>}/> 
-        <Route path="/" 
-        element={<TextForm heading="Enter text to analyze below"
-        mode={mode}/>}/>
+        {/* <Route path = "/about" element= {<About/>}/> 
+        <Route path="/"  */}
+        <TextForm heading="Enter text to analyze below"
+        mode={mode}/>
           {/* </Route> */}
-      </Routes>
-      </BrowserRouter>
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
   
       
     </>
