@@ -1,6 +1,6 @@
 {
-  "homepage": "https://amanrawat135.github.io/TextUtils",
-  "name": "my-app",
+
+  "name": "textutils",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
